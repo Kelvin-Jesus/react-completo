@@ -14,6 +14,8 @@ const Compras = () => {
           <div>
               {count}
               <button onClick={handleClick} >Incrementar</button>
+              <p>Total: {count}</p>
+              <p>Total: R$ {count * 250}</p>
           </div>
       )
 
