@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Compras from './react-para-iniciantes/0202-react-basico/hooks.js';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Compras />
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
