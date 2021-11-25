@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import Compras from './react-para-iniciantes/0202-react-basico/hooks.js';
+import App from './react-para-iniciantes/0207-jsx/exercicio/App.js';
 // import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Compras />
+    <App />
     {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
