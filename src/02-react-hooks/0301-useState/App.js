@@ -15,6 +15,13 @@ const App = () => {
     // }
 
     const [ modal, setModal ] = useState(false)
+    let [ items, setItems ] = useState('teste')
+
+    const [ theme, setTheme ] = useState( () => window.localStorage.getItem('currentTheme'))
+
+    const handleClick = () => {
+        setItems('outros')
+    }
 
     return (
         <div>
@@ -22,6 +29,8 @@ const App = () => {
             <p>{userData.age}</p>
             <p>{userData.college}</p>
             <button onClick={handleClick} disabled={!state??false}>{ state ? 'Habilitado' : 'Desabilitado' }</button> */}
+            {items}
+            <button onClick={handleClick}>Aqui</button>
             <Modal modal={modal} setModal={setModal}/>
             <ButtonModal setModal={setModal}></ButtonModal>
 
