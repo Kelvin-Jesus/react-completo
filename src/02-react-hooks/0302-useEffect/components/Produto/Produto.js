@@ -1,0 +1,18 @@
+import React, { useEffect } from 'react';
+
+const Produto = () => {
+
+    useEffect(() => {
+        function handleScroll (e) {console.log(e)}
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, []);
+
+    return (
+        <div style={{height: '200vh'}}>
+            <p>Meu Produto</p>
+        </div>
+    );
+}
+
+export default Produto;
