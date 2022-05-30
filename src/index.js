@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import App from './02-react-hooks/0305-useContext/exercicio/App';
+import App from './02-react-hooks/0306-custom-hooks/App';
 // import App from './App';
 
 ReactDOM.render(
