@@ -4,6 +4,20 @@ const App = () => {
 
     const [ select, setSelect ] = React.useState('')
     const [ radio, setRadio ] = React.useState()
+    const [ termos, setTermos ] = React.useState()
+    const [ cores, setCores ] = React.useState([])
+
+    const handleCheckbox = ({ target }) => {
+
+        if ( !target.checked ) {
+            setCores(cores.filter( cor => cor !== target.value ));
+            return;
+        }
+        
+        setCores([ ...cores, target.value ]);
+        
+    }
+
     const [ produto, setProduto ] = React.useState()
 
     const handleSubmit = React.useCallback((e) => {
@@ -18,6 +32,8 @@ const App = () => {
         setProduto(e.target.value)
 
     }, [])
+
+    const checkColor = (cor) => cores.includes(cor)
 
 
     return (
@@ -51,7 +67,33 @@ const App = () => {
                     />
                     smartphone
                 </label>
-                
+                <label className='a'>
+                    <input 
+                        type="checkbox" 
+                        value="termos"
+                        checked={termos}
+                        onChange={({ target }) => setTermos(target.checked)}
+                    />
+                    Aceito os termos
+                </label>
+                <label className='a'>
+                    <input 
+                        type="checkbox" 
+                        value="azul"
+                        checked={checkColor('azul')}
+                        onChange={handleCheckbox}
+                    />
+                    Azul
+                </label>
+                <label className='a'>
+                    <input 
+                        type="checkbox" 
+                        value="vermelho"
+                        checked={checkColor('vermelho')}
+                        onChange={handleCheckbox}
+                    />
+                    Vermelho
+                </label>
             </form>
         </>
     );

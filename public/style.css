@@ -77,7 +77,7 @@ textarea:focus {
 label.a {
     display: flex;
 }
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
     width: 1%;
 }
 
