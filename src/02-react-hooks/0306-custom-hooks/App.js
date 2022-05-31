@@ -7,8 +7,12 @@ const App = () => {
     const [ produto, setProduto ] = useLocalStorage('produto', '');
     const { request, data, loading, error } = useFetch();
 
-    useEffect(async () => {
-       const { requestData, response } = await request('https://ranekapi.origamid.dev/json/api/produto/notebook');
+    useEffect(() => {
+        async function makeRequest() {
+            const { requestData, response } = await request('https://ranekapi.origamid.dev/json/api/produto/notebook');
+        }
+        makeRequest()
+       
     }, [request]);
 
 
