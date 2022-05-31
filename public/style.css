@@ -74,6 +74,13 @@ textarea:focus {
   box-shadow: 0 0 0 3px var(--color-light);
 }
 
+label.a {
+    display: flex;
+}
+input[type="radio"] {
+    width: 1%;
+}
+
 button {
   cursor: pointer;
   border: none;
