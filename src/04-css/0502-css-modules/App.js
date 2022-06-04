@@ -3,7 +3,7 @@ import Produto from './components/Produto'
 
 const App = () => {
     return (
-        <div >
+        <div className={styles.titulo}>
             <Produto />
         </div>
     );
