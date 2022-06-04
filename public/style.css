@@ -76,9 +76,12 @@ textarea:focus {
 
 label.a {
     display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 input[type="radio"], input[type="checkbox"] {
-    width: 1%;
+    width: 5%;
 }
 
 button {
@@ -110,4 +113,13 @@ button:disabled {
 hr {
   border: 2px solid black;
   margin: 2rem auto;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
