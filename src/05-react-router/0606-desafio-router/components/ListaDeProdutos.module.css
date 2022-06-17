@@ -1,0 +1,5 @@
+.lista_produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    gap: 1.5rem;
+}

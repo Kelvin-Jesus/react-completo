@@ -1,0 +1,27 @@
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contato img {
+    border-radius: .5rem;
+}
+
+.dadosContato {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.dadosContato li::before {
+    content: '';
+    width: 10px;
+    height: 4px;
+    display: inline-block;
+    margin-right: .2rem;
+    position: relative;
+    background: #ecadffee;
+}
+

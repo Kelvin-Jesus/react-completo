@@ -1,0 +1,30 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header__link {
+    color: #fff;
+    background: #9912e7;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    text-decoration: none;
+    outline: none;
+    transition: all ease .3s;
+}
+
+.header__link:hover, .header__link:focus {
+    background: #b480d3;
+    outline: 2px solid #9912e7;
+    box-shadow: 0px 0px 5px 1px #9912e7;
+}

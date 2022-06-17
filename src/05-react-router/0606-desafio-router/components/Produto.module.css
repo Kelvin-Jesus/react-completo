@@ -1,0 +1,46 @@
+.produtoContainer {
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.produtoContainer img {
+    border-radius: .5rem;
+}
+
+.page_produto_container {
+    display: flex;
+}
+
+.page_produto_imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.page_produto_imgs img {
+    border-radius: .5rem;
+}
+
+.page_produto_info {
+    width: 80%;
+    margin-left: 2rem;
+    opacity: 1;
+}
+
+.page_produto_priceCard {
+    background: #5feb82;
+    color: #0a7224;
+    width: fit-content;
+    padding: .5rem .8rem;
+    border-radius: .3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.page_produto_descricao {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    line-height: 1.375rem;
+}
